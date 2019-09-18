@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LayuiController {
 	@RequestMapping("/index")
     public String demo() {
-        return "layui/index";
+        return "html/index";
     }
+	@RequestMapping("/about")
+    public String getAbout() {
+        return "html/about";
+    }
+
 }
